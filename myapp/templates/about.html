@@ -1,0 +1,459 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Unleashed Boundaries:A Cricket Website</title>
+
+    <link href="static///fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="static/assets/css/style-starter.css">
+  </head>
+  <body>
+<!--w3l-header-->
+
+<header class="w3l-header-nav">
+	<!--/nav-->
+	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="static/assets/images/ub.png" alt="Your logo" style="height:45px;" /> Unleashed Boundaries</a>
+			<!-- if logo is image enable this   
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item @@home__active">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+                    <li class="nav-item @@contact__active">
+						<a class="nav-link" href="/turf">Turf</a>
+					</li>
+                    <li class="nav-item @@contact__active">
+						<a class="nav-link" href="/product">Products</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+        {% if request.session.loginname %}
+                <h5>Hello,{{ request.session.loginname }}</h5>
+                 <a href="/logout" class="btn-secondary btn-style">Logout</a>
+                {% else %}
+                <a href="/signup" class="ml-3 book btn btn-secondary btn-style">Signup</a>
+                <a href="/login" class="ml-3 book btn btn-secondary btn-style">Login</a>
+                 {% endif %}
+	</nav>
+	<!--//nav-->
+</header>
+<!-- //w3l-header -->
+<section class="w3l-breadcrumb">
+    <div class="breadcrum-bg py-sm-5 py-4">
+        <div class="container py-lg-3">
+
+            <h2>About Us</h2>
+            <p><a href="/index">Home</a> &nbsp; / &nbsp; About</p>
+
+        </div>
+    </div>
+</section>
+<div class="w3l-about-us best-rooms py-5">
+    <div class="container py-lg-5 py-sm-4">
+        <div class="maghny-gd-1">
+            <div class="row about-text">
+                <div class="col-lg-6">
+                    <h3 class="title-big">Empowering indivusals through innovative solutions and meaningfull connections</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p>The turf for this project is a premium-grade, high-quality synthetic grass designed to mimic the appearance and feel of natural grass while offering exceptional durability and low maintenance.
+                        With its realistic texture and vibrant green color, this turf provides an attractive and inviting landscape solution for various applications such as residential lawns, commercial landscaping,
+                        sports fields, and playgrounds. Its UV-resistant fibers ensure long-lasting color retention, even under direct sunlight, while its drainage system efficiently manages water, preventing puddling
+                        and ensuring a dry surface.</p>
+                    <p class="mt-3"> Additionally, this turf is environmentally friendly, requiring no water, fertilizers, or pesticides for upkeep, making it a sustainable choice for modern landscapes.
+                        </p>
+                </div>
+            </div>
+            <div class="middle-section row mt-lg-5 pt-md-3">
+
+                <div class="three-grids-columns col-lg-4 col-md-6 mt-md-0 mt-4">
+                    <img src="static/assets/images/S2.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4> <a href="/turf"> Best Turfs </a></h4>
+                        <p>Best and affordable turfs </p>
+                        <a href="/turf" class="btn mt-4">View turfs </a>
+                    </div>
+                </div>
+                <div class="three-grids-columns col-lg-4 col-md-6">
+                    <img src="static/assets/images/aboutgirl.jpg" alt="" class="img-fluid">
+
+                </div>
+                <div class="three-grids-columns col-lg-4 col-md-6 mt-lg-0 mt-4">
+                    <img src="static/assets/images/S3.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4> <a href="/product"> Best Cricket Products </a></h4>
+                        <p>All Sorts of cricket products available</p>
+                        <a href="/product" class="btn mt-4">View products </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </figcaption>
+        </figure>
+        </div>
+    </div>
+</div>
+
+<!-- team -->
+<section class="w3l-stats">
+    <div class="main-w3 py-5">
+        <div class="container py-lg-3">
+            <div class="row align-items-center">
+                <div class="col-lg-6 title">
+                    <h3 class="title-big">We have a great Turfs and Products! Enjoy your gameplay and our cricket products</h3>
+                    <p class="mt-4">Natural turf provides several environmental benefits, such as oxygen production,
+                        carbon sequestration, soil erosion control, and habitat for wildlife. However, it requires water, fertilizer, pesticides, and energy for maintenance.
+                        Natural turf, also known as grass, is grown from seeds or
+                        sod and requires regular maintenance such as mowing, watering, fertilizing, and pest control.
+                         Well-maintained natural turf provides a soft, cushioned surface that can reduce the risk of injuries during sports and recreational activities.</p>
+                </div>
+                <div class="col-lg-6 main-cont-wthree-fea text-center">
+                    <div class="row">
+                        <div class="col-6 pr-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-users"></span>
+                                <h3 class="title-spe">Users Satisfaction</h3>
+                                <p>Can book turfs & buy cricket products</p>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-camera"></span>
+                                <h3 class="title-spe">Turfs Looking</h3>
+                                <p>Users can view lots of turfs</p>
+                            </div>
+                        </div>
+                        <div class="col-6 pr-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-briefcase"></span>
+                                <h3 class="title-spe">Buying of products</h3>
+                                <p>Users can buy cricket products</p>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-headphones" aria-hidden="true"></span>
+                                <h3 class="title-spe">Staff 24/7</h3>
+                                <p>For Product Related Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- team -->
+<section class="team py-5" id="team">
+	<div class="container py-lg-4 py-sm-3">
+        <h3 class="title-big text-center mb-md-5 mb-4">Developers</h3>
+		<div class="row inner-sec">
+			<div class="col-md-4 col-8">
+				<div class="team-grids text-center">
+					<img src="static/assets/images/kaushal.jpg" height="300px" width="400px" alt="">
+					<div class="team-info">
+						<div class="caption">
+							<h4>Kaushal</h4>
+							<h6>Rajpara</h6>
+						</div>
+					</div>
+				</div>
+				<div class="social-icons-section text-center">
+					<a class="fac" href="#url">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a class="twitter" href="#url">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-6">
+				<div class="team-grids text-center">
+					<img src="static/assets/images/dev.jpg" alt="" height="300px" width="400px">
+					<div class="team-info">
+						<div class="caption">
+							<h4>Dev</h4>
+							<h6>Rayka</h6>
+						</div>
+					</div>
+				</div>
+				<div class="social-icons-section text-center">
+					<a class="fac" href="#url">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a class="twitter" href="#url">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mt-md-0 mt-4">
+				<div class="team-grids text-center">
+					<img src="static/assets/images/prachet.jpg" height="300px" width="400px" alt="">
+					<div class="team-info">
+						<div class="caption">
+							<h4>Prachet</h4>
+							<h6>Samal</h6>
+						</div>
+					</div>
+				</div>
+				<div class="social-icons-section text-center">
+					<a class="fac" href="#url">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a class="twitter" href="#url">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="w3l-footer-29-main">
+  <div class="footer-29 py-5">
+    <div class="container py-lg-4">
+      <div class="row footer-top-29">
+        <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1">
+          <h6 class="footer-title-29">Contact Us</h6>
+          <ul>
+              <li><a href="tel:+91 9426074522"><span class="fa fa-phone"></span> +(91)9426074522</a></li>
+              <li><a href="tel:+91 7436079363"><span class="fa fa-phone"></span> +(91)7436079363</a></li>
+              <li><a href="tel:+91 7567820479"><span class="fa fa-phone"></span> +(91)7567820479</a></li>
+            <li><a href="Email: raykadev70@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                raykadev70@gmail.com</a></li>
+                          <li><a href="Email: prachetsamal@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                prachetsamal@gmail.com</a></li>
+                          <li><a href="Email: kaushalrajpara@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                kaushalrajpara@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-sm-0 mt-5">
+
+          <ul>
+            <h6 class="footer-title-29">Useful Links</h6>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/turf"> See Turfs</a></li>
+            <li><a href="/product"> See products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-3 mt-lg-0 mt-5">
+            <h6 class="footer-title-29">Important Dates</h6>
+            <div class="footer-post mb-4">
+              <a>Unleashed Boundaries since</a>
+              <p class="small"><span class="fa fa-clock-o"></span> March 15, 2024</p>
+            </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+            <ul>
+            <h6 class="footer-title-29">User response</h6>
+            <li><a href="/feedback"> Give your feedback</a></li>
+            <li><a href="/contact">Contact us</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w3l-footer-29-main w3l-copyright">
+  <div class="container">
+    <div class="row bottom-copies">
+      <p class="col-lg-8 copy-footer-29">© 2024 Cricket Products And Turfs. All rights reserved | Designed by
+          Dev Rayka</p>
+
+      <div class="col-lg-4 main-social-footer-29">
+        <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+        <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+        <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+      </div>
+
+    </div>
+  </div>
+
+
+ <!-- move top -->
+ <button onclick="topFunction()" id="movetop" title="Go to top">
+  &#10548;
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+</section>
+
+<!-- Template JavaScript -->
+<script src="static/assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="static/assets/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<script>
+  $(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+
+<!-- script for owlcarousel -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for owlcarousel -->
+<script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<script src="static/assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

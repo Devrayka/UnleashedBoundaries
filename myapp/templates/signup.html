@@ -1,0 +1,351 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Unleashed Boundaries:A Cricket Website</title>
+
+    <link href="static//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="static/assets/css/style-starter.css">
+            <style>
+
+              .form-container {
+      background-color: #FAFAFA ;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+      </style>
+  </head>
+  <body>
+<!--w3l-header-->
+
+<header class="w3l-header-nav">
+	<!--/nav-->
+	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="static/assets/images/ub.png" alt="Your logo" style="height:45px;" />Unleashed Boundaries</a>
+			<!-- if logo is image enable this
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item @@about__active">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+                    <li class="nav-item @@contact__active">
+						<a class="nav-link" href="/turf">Turf</a>
+					</li>
+                    <li class="nav-item @@contact__active">
+						<a class="nav-link" href="/product">Products</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+         {% if request.session.loginname %}
+                <h5>Hello,{{ request.session.loginname }}</h5>
+                 <a href="/logout" class="btn-secondary btn-style">Logout</a>
+                {% else %}
+                <a href="/login" class="ml-3 book btn btn-secondary btn-style">Login</a>
+                 {% endif %}
+	</nav>
+	<!--//nav-->
+</header>
+<section class="w3l-breadcrumb">
+    <div class="breadcrum-bg py-sm-5 py-4">
+        <div class="container py-lg-3">
+            <h2>Signup</h2>
+            <p><a href="/">Home</a> &nbsp; / &nbsp; Signup</p>
+
+        </div>
+    </div>
+</section>
+<!-- //w3l-header -->
+ <!-- main-slider -->
+
+<section class="w3l-availability-form" id="booking">
+    <!-- /w3l-availability-form-section -->
+    <div class="w3l-availability-form-main py-5">
+        <div class="container pt-lg-3 pb-lg-5">
+            <div class="forms-top">
+                <div class="form-right">
+                    <center>
+                         <div class="form-container">
+                    <div class="form-inner-cont">
+                        <form action="/fetchsignupdata" method="post" enctype="multipart/form-data" class="signin-form">
+                            {% csrf_token %}
+                            <!-- <div class="row book-form"> -->
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Name</label>
+                                    <input type="text" name="uname" placeholder="Enter Your Name" required="">
+                                </div>
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Email</label>
+                                    <input type="email" name="uemail" placeholder="Enter Your Email" required="">
+                                </div>
+                                 <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Gender</label>
+                                    <select name="ugender" class="selectpicker">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Phone Number</label>
+                                    <input type="tel" name="uphone" placeholder="Enter Your Phone Number" pattern="[0-9]{10}" required="">
+                                </div>
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Password</label>
+                                     <input type="password" name="upassword" placeholder="Enter Your Password" required="">
+                                </div>
+                                <br>
+
+                                <div class="bottom-btn col-md-4 col-sm-6 mt-3">
+                                    <button class="btn btn-style btn-secondary book mt-3">Signup</button>
+
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="w3l-footer-29-main">
+  <div class="footer-29 py-5">
+    <div class="container py-lg-4">
+      <div class="row footer-top-29">
+        <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1">
+          <h6 class="footer-title-29">Contact Us</h6>
+          <ul>
+              <li><a href="tel:+91 9426074522"><span class="fa fa-phone"></span> +(91)9426074522</a></li>
+              <li><a href="tel:+91 7436079363"><span class="fa fa-phone"></span> +(91)7436079363</a></li>
+              <li><a href="tel:+91 7567820479"><span class="fa fa-phone"></span> +(91)7567820479</a></li>
+            <li><a href="Email: raykadev70@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                raykadev70@gmail.com</a></li>
+                          <li><a href="Email: prachetsamal@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                prachetsamal@gmail.com</a></li>
+                          <li><a href="Email: kaushalrajpara@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                kaushalrajpara@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-sm-0 mt-5">
+
+          <ul>
+            <h6 class="footer-title-29">Useful Links</h6>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/turf"> See Turfs</a></li>
+            <li><a href="/product"> See products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-3 mt-lg-0 mt-5">
+            <h6 class="footer-title-29">Important Dates</h6>
+            <div class="footer-post mb-4">
+              <a>Unleashed Boundaries since</a>
+              <p class="small"><span class="fa fa-clock-o"></span> March 15, 2024</p>
+            </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+            <ul>
+            <h6 class="footer-title-29">User response</h6>
+            <li><a href="/feedback"> Give your feedback</a></li>
+            <li><a href="/contact">Contact us</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w3l-footer-29-main w3l-copyright">
+  <div class="container">
+    <div class="row bottom-copies">
+      <p class="col-lg-8 copy-footer-29">© 2024 Cricket Products And Turfs. All rights reserved | Designed by
+          Dev Rayka</p>
+
+      <div class="col-lg-4 main-social-footer-29">
+        <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+        <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+        <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+      </div>
+
+    </div>
+  </div>
+
+
+ <!-- move top -->
+ <button onclick="topFunction()" id="movetop" title="Go to top">
+  &#10548;
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+</section>
+
+<!-- Template JavaScript -->
+<script src="static/assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="static/assets/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<script>
+  $(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+
+<!-- script for owlcarousel -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for owlcarousel -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<script src="static/assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
